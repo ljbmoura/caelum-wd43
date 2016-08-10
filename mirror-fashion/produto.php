@@ -7,7 +7,7 @@
 	<div class="produto">
 		<h1>Fuzzy cardigan</h1>
 		<p>por apenas R$ 129,00</p>
-		<form>
+		<form action="checkout.php" method="POST">
 			<fieldset class="cores">
 				<legend>Escolha a cor:</legend>
 
@@ -23,9 +23,11 @@
 
 			<fieldset class="tamanhos">
 				<legend>Escolha o tamanho:</legend>
-				<input type="range" min="36" max="46" value="42" step="2" nome="tamanho" id="tamanho">
+				<input type="range" min="36" max="46" value="42" step="2" name="tamanho" id="tamanho">
 			</fieldset>	
 			<input type="submit" class="comprar" value="Comprar">
+			<input type="hidden" name="nome" value="Fuzzy Cardigan">
+			<input type="hidden" name="preco" value="129.00">
 		</form>
 	</div>
 	<div class="detalhes">
