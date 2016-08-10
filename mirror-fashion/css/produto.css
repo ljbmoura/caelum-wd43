@@ -1,0 +1,5 @@
+.cores label:after {
+	content: '';
+	display: block;
+	
+}
