@@ -9,8 +9,8 @@
 <!--<link rel="stylesheet" type="text/css" href="css\normalize.css">-->
 <link rel="stylesheet" type="text/css" href="css/reset.css">
 <link rel="stylesheet" type="text/css" href="css/estilos.css">
-<link rel="stylesheet" type="text/css" href="css/mobile.css" media="(max-width: 940px)">
-<link rel="stylesheet" type="text/css" href="css/produto.css">
+<link rel="stylesheet" type="text/css" href="css/mobile.css" media="(max-width: 939px)"> 
+<?php print @$cabecalho_css; ?>
 </head>
 	<header class="container">
 		<h1>
