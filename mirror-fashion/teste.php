@@ -12,6 +12,8 @@
 <body>
 	<h1>Olá Mundo</h1>
 	<?php print date("Y")-1932; ?>
+	<?=$_POST["mensagem"] ?>
+	<?=$_POST["cor"] ?>
 </body>
 
 </html>
