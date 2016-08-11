@@ -1,4 +1,4 @@
-@media(min--moz-device-pixel-ratio:0) {
+@media ( min--moz-device-pixel-ratio :0) {
 	fieldset {
 		display: table-column;
 	}
@@ -22,7 +22,7 @@
 }
 
 .cores label:hover:after {
-	border: 6px solid rgba(0,0,0,0.1);
+	border: 6px solid rgba(0, 0, 0, 0.1);
 }
 
 .cores label img {
@@ -34,11 +34,11 @@
 	display: none;
 }
 
-.cores input:checked + label:after {
-	border: 6px solid rgba(0,0,0,0.3);
+.cores input:checked+label:after {
+	border: 6px solid rgba(0, 0, 0, 0.3);
 }
 
-.cores input:not(:checked) + label img {
+.cores input:not (:checked ) +label img {
 	display: none;
 }
 
@@ -83,7 +83,6 @@ label[for=azul]:after {
 .comprar {
 	background: #91bd3c;
 	border: none;
-
 	color: #333;
 	font-size: 1.4em;
 	text-transform: uppercase;
@@ -109,6 +108,17 @@ label[for=azul]:after {
 	max-width: 36em;
 }
 
+.tamanhos output {
+	display: inline-block;
+	height: 44px;
+	width: 44px;
+	line-height: 44px;
+	text-align: center;
+	border: 3px solid #666;
+	border-radius:50%;
+	color: #555;
+}
+
 table {
 	border-spacing: 0.2em;
 	border-collapse: separate;
@@ -120,7 +130,7 @@ thead {
 
 thead th {
 	font-weight: bold;
-	padding:0.3em 1em;
+	padding: 0.3em 1em;
 	text-align: center;
 }
 
@@ -136,28 +146,25 @@ td:first-child {
 	font-style: italic;
 }
 
-@media (min-width: 500px) {
+@media ( min-width : 500px) {
 	.detalhes {
 		font-size: 1.2em;
 	}
 }
 
-@media (min-width: 630px) {
+@media ( min-width : 630px) {
 	.produto {
 		position: relative;
 		padding-left: 40%;
 		font-size: 1.2em;
 	}
-
 	.cores {
 		position: static;
 		padding: 0;
 	}
-
 	.cores legend {
 		position: static;
 	}
-
 	.cores label img {
 		position: absolute;
 		top: 0;
@@ -165,13 +172,11 @@ td:first-child {
 		max-width: 35%;
 		max-height: 100%;
 	}
-
 	.cores label:after {
 		position: static;
 		float: left;
 		margin-right: 10px;
 	}
-
 	fieldset {
 		display: inline-block;
 		vertical-align: top;
