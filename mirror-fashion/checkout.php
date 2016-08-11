@@ -11,13 +11,7 @@
 </head>
 
 <body>
-	<script type="text/javascript">
-		document.querySelector('input[type=email]').oninvalid = function() {
-			this.setCustomValidity("");
-			if (!this.validity.valid) {
-			}
-		}
-	</script>
+
 	<div class="jumbotron">
 		<div class="container">
 			<h1>Ótima escolha!</h1>
@@ -65,58 +59,60 @@
 
 			<div class="col-sm-8 col-lg-9">
 				<form action="">
-				<div class="row"> 
-					<fieldset class="col-md-6">
-						<legend>Dados Pessoais</legend>
-						<div class="form-group">
-							<label for="nome">Nome Completo</label> <input type="text"
-								class="form-control" id="nome" name="nome" autofocus="autofocus"
-								required>
-						</div>
-						<div class="form-group">
-							<label for="email">Email</label>
-							<div class="input-group">
-								<span class="input-group-addon">@</span> <input type="text"
-									class="form-control" id="email" name="email"
-									placeholder="email@exemplo.com">
+					<div class="row">
+						<fieldset class="col-md-6">
+							<legend>Dados Pessoais</legend>
+							<div class="form-group">
+								<label for="nome">Nome Completo</label> <input type="text"
+									class="form-control" id="nome" name="nome"
+									autofocus="autofocus" required>
 							</div>
-						</div>
-						<div class="form-group">
-							<label for="cpf">CPF</label> <input type="text"
-								class="form-control" id="cpf" name="cpf"
-								placeholder="000.000.000-00" required="required">
-						</div>
-						<div class="checkbox">
-							<label><input type="checkbox" value="sim"
-								checked="checked" id="spam" name="spam">Quero receber
-								Spam da Mirror fashion</label>
-						</div>
-					</fieldset>
+							<div class="form-group">
+								<label for="email">Email</label>
+								<div class="input-group">
+									<span class="input-group-addon">@</span> <input type="email"
+										class="form-control" id="email" name="email"
+										placeholder="email@exemplo.com">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="cpf">CPF</label> <input type="text"
+									class="form-control" id="cpf" name="cpf"
+									placeholder="000.000.000-00" required="required">
+							</div>
+							<div class="checkbox">
+								<label><input type="checkbox" value="sim"
+									checked="checked" id="spam" name="spam">Quero receber
+									Spam da Mirror fashion</label>
+							</div>
+						</fieldset>
 
-					<fieldset class="col-md-6">
-						<legend>Cartão de Crédito</legend>
-						<div class="form-group">
-							<label for="numero-cartao">Número - CVV </label> <input
-								type="text" class="form-control" id="numero-cartao"
-								name="numero-cartao">
-						</div>
-						<div class="form-group">
-							<label for="bandeira-cartao">Bandeira</label> <select
-								name="bandeira-cartao" id="bandeira-cartao" class="form-control">
-								<option value="mastercard">Mastercard</option>
-								<option value="visa">Visa</option>
-								<option value="amex">American Express</option>
-							</select>
-						</div>
-						<div class="form-group">
-							<label for="validade-cartao">Validade</label> <input type="month"
-								class="form-control" id="validade-cartao" name="validade-cartao">
-						</div>
+						<fieldset class="col-md-6">
+							<legend>Cartão de Crédito</legend>
+							<div class="form-group">
+								<label for="numero-cartao">Número - CVV </label> <input
+									type="text" class="form-control" id="numero-cartao"
+									name="numero-cartao">
+							</div>
+							<div class="form-group">
+								<label for="bandeira-cartao">Bandeira</label> <select
+									name="bandeira-cartao" id="bandeira-cartao"
+									class="form-control">
+									<option value="mastercard">Mastercard</option>
+									<option value="visa">Visa</option>
+									<option value="amex">American Express</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label for="validade-cartao">Validade</label> <input
+									type="month" class="form-control" id="validade-cartao"
+									name="validade-cartao">
+							</div>
 
 
-					</fieldset>
+						</fieldset>
 
-				</div>
+					</div>
 					<button type="submit" class="btn btn-primary">
 						<span class="glyphicon glyphicon-thumbs-up btn-lg pull-right"></span>
 					</button>
@@ -125,6 +121,19 @@
 
 		</div>
 	</div>
+	
+	<script type="text/javascript" language="javascript">
+	
+	<!-- boa prática inserir/carregar scripts no final da página -->
+		
+		
+		document.querySelector('input[type=email]').oninvalid = function() {
+			this.setCustomValidity("");
+			if (!this.validity.valid) {
+				this.setCustomValidity("msg email inválido customizada");
+			}
+		}
+	</script>
 </body>
 
 </html>
