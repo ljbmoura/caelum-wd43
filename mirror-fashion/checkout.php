@@ -29,9 +29,11 @@
 						<h2 class="panel-title">Sua compra</h2>
 					</div>
 					<div class="panel-body">
-						<img src="img/produtos/foto<?=$_POST["id"]?>-
-						<?=$_POST["cor"]?>
-						.png" class="img-thumbnail img-responsive hidden-xs">
+						<img
+							src="img/produtos/foto<?=$_POST['id']?>-
+						<?=$_POST['cor']?>
+						.png"
+							class="img-thumbnail img-responsive hidden-xs">
 						<dl>
 							<dt>Produto</dt>
 							<dd>
@@ -49,14 +51,23 @@
 							</dd>
 
 							<dt>Preço</dt>
-							<dd>
+							<dd id="preco">
 								<?=$_POST["preco"] ?>
 							</dd>
 						</dl>
+						<div class="form-group">
+							<label for="qt">Quantidade</label> <input id="qt"
+								class="form-control" type="number" min="0" max="99" value="1">
+						</div>
+						<div class="form-group">
+							<label for="total">Total</label>
+							<output id="total" for="qt preco" class="form-control">
+								<?=$_POST["preco"] ?>
+							</output>
+						</div>
 					</div>
 				</div>
 			</div>
-
 			<div class="col-sm-8 col-lg-9">
 				<form action="">
 					<div class="row">
@@ -71,7 +82,7 @@
 								<label for="email">Email</label>
 								<div class="input-group">
 									<span class="input-group-addon">@</span> <input type="email"
-										class="form-control" id="email" name="email"
+										class="form-control" id="email" name="email" required
 										placeholder="email@exemplo.com">
 								</div>
 							</div>
@@ -108,8 +119,6 @@
 									type="month" class="form-control" id="validade-cartao"
 									name="validade-cartao">
 							</div>
-
-
 						</fieldset>
 
 					</div>
@@ -121,19 +130,9 @@
 
 		</div>
 	</div>
-	
-	<script type="text/javascript" language="javascript">
-	
-	<!-- boa prática inserir/carregar scripts no final da página -->
-		
-		
-		document.querySelector('input[type=email]').oninvalid = function() {
-			this.setCustomValidity("");
-			if (!this.validity.valid) {
-				this.setCustomValidity("msg email inválido customizada");
-			}
-		}
-	</script>
+
+	<script src="js/total.js"></script>
+	<scri
 </body>
 
 </html>
