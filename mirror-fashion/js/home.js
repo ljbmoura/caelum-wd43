@@ -6,7 +6,7 @@ $('.mais-vendidos').addClass('painel-compacto');
 
 
 
-//um para cada
+//um método para cada
 //$('.novidades button').on ('click', function() {
 //	$('.novidades').removeClass('painel-compacto');
 //});
@@ -15,12 +15,8 @@ $('.mais-vendidos').addClass('painel-compacto');
 //});
 
 
-/*$('.painel button').on ('click', function() {
-$(this).parent().removeClass('painel-compacto');
-});
-*/
 
-// parametrizando
+// parametrizando, porém é necessário usar uma função anônima
 //$('.novidades button').on ('click', function () {
 //	remove(".novidades");
 //});

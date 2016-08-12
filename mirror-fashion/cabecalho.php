@@ -13,6 +13,7 @@
 	media="(max-width: 939px)">
 <!-- É necessário importar o JQuery antes dos demais JS para que estes tenham visibilidade naquele   -->
 <script type="text/javascript" src="js/jquery.js"></script>
+<link href="http://fonts.googleapis.com/css?family=PT+Sans|Bad+Script" rel="stylesheet">
 
 
 <?php print @$cabecalho_css; ?>
