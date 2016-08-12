@@ -21,7 +21,7 @@ header {
 	padding-top: 8px;
 	position: absolute;
 	top: 0;
-	right: 0;	
+	right: 0;
 }
 
 .menu-opcoes {
@@ -54,8 +54,7 @@ header {
 	padding-bottom: 10px;
 }
 
-.busca,
-.menu-departamentos {
+.busca, .menu-departamentos {
 	background-color: #dcdcdc;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -66,18 +65,15 @@ header {
 	border-top-right-radius: 4px;
 }
 
-.busca h2,
-.busca form,
-.menu-departamentos h2 {
+.busca h2, .busca form, .menu-departamentos h2 {
 	margin: 10px;
 }
-
 
 .busca input {
 	vertical-align: middle;
 }
 
-.busca input[type=search]{
+.busca input[type=search] {
 	width: 170px;
 }
 
@@ -138,14 +134,14 @@ header {
 	width: 140px;
 	margin: 2px;
 	padding-bottom: 10px;
-	transition: all 2s ;
+	transition: all 2s;
 }
 
 .painel li:hover {
 	background-color: rgba(255, 255, 255, 0.9);
 	box-shadow: 0 0 5px #333;
-	transition: all 2s ;
-	#transition: box-shadow 2s ;
+	transition: all 2s; #
+	transition: box-shadow 2s;
 	transform: scale(1.2) rotate(-5deg);
 }
 
@@ -178,7 +174,6 @@ footer {
 	background-image: url(../img/fundo-rodape.png);
 	clear: both;
 	padding: 20px 0;
-
 }
 
 footer .container {
@@ -192,10 +187,10 @@ footer .container {
 }
 
 .social a {
- 	height: 32px;
- 	width: 32px;
- 	display: block;
- 	text-indent: -9999px;
+	height: 32px;
+	width: 32px;
+	display: block;
+	text-indent: -9999px;
 }
 
 .social a[href*="facebook"] {
@@ -215,3 +210,31 @@ footer .container {
 	margin-left: 25px;
 }
 
+.painel button {
+	display: none;
+	float: right;
+	margin-right: 10px;
+	padding: 10x;
+	background-color: #333;
+	border: 0;
+	border-radius: 4px;
+	box-shadow: 1px 1px 3px rgba(30, 30, 30, 0.5);
+	color: white;
+	font-size: 1em;
+	text-decoration: none;
+	text-shadow: 1px 0 1px black;
+	transition: 0.7s;
+}
+
+.painel button:hover {
+	background-color: #393939;
+	box-shadow: 10px 0 20px rgba(0,0, 255, 0.9);
+}
+
+.painel-compacto li:nth-child(n+5) {
+	display: none;
+}
+
+.painel-compacto button {
+	display: block;
+}

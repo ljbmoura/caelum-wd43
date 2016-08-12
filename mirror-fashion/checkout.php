@@ -89,7 +89,8 @@
 							<div class="form-group">
 								<label for="cpf">CPF</label> <input type="text"
 									class="form-control" id="cpf" name="cpf"
-									placeholder="000.000.000-00" required="required">
+									data-mask="999.999.999-99" placeholder="000.000.000-00"
+									required="required">
 							</div>
 							<div class="checkbox">
 								<label><input type="checkbox" value="sim"
@@ -103,7 +104,7 @@
 							<div class="form-group">
 								<label for="numero-cartao">Número - CVV </label> <input
 									type="text" class="form-control" id="numero-cartao"
-									name="numero-cartao">
+									name="numero-cartao" data-mask="9999 9999 9999 9999 - 999">
 							</div>
 							<div class="form-group">
 								<label for="bandeira-cartao">Bandeira</label> <select
@@ -130,7 +131,9 @@
 
 		</div>
 	</div>
-
+<!-- 	<script type="text/javascript" src="js/bootstrap.js"></script> -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/inputmask-plugin.js"></script>
 	<script src="js/total.js"></script>
 	<scri
 </body>

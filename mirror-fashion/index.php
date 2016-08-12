@@ -37,38 +37,38 @@
 	<section class="painel novidades">
 		<h2>Novidades</h2>
 		<ol>
-			<li><a href="produto.html">
+			<li><a href="produto.php">
 					<figure>
 						<img alt="mulher blusa fuzz cardigan"
 							src="img/produtos/miniatura1.png">
 						<figcaption>Fuzz Cardigan por R$ 129,99</figcaption>
 					</figure>
 			</a></li>
-			<li><a href="produto.html">
+			<li><a href="produto.php">
 					<figure>
 						<img alt="Produto 2" src="img/produtos/miniatura2.png">
 						<figcaption>Produto 2 por R$ 2,99</figcaption>
 					</figure>
 			</a></li>
-			<li><a href="produto.html">
+			<li><a href="produto.php">
 					<figure>
 						<img alt="Produto 3" src="img/produtos/miniatura3.png">
 						<figcaption>Produto 3 por R$ 3,99</figcaption>
 					</figure>
 			</a></li>
-			<li><a href="produto.html">
+			<li><a href="produto.php">
 					<figure>
 						<img alt="Produto 4" src="img/produtos/miniatura4.png">
 						<figcaption>Produto 4 por R$ 4,99</figcaption>
 					</figure>
 			</a></li>
-			<li><a href="produto.html">
+			<li><a href="produto.php">
 					<figure>
 						<img alt="Produto 5" src="img/produtos/miniatura5.png">
 						<figcaption>Produto 5 por R$ 5,99</figcaption>
 					</figure>
 			</a></li>
-			<li><a href="produto.html">
+			<li><a href="produto.php">
 					<figure>
 						<img alt="Produto 6" src="img/produtos/miniatura6.png">
 						<figcaption>Produto 6 por R$ 6,99</figcaption>
@@ -76,53 +76,54 @@
 			</a></li>
 
 		</ol>
+		<button type="button">Mostra mais</button>
 	</section>
 
-	<section class="painel mais-vendidos">
+	<section class="painel mais-vendidos ">
 		<h2>Mais Vendidos</h2>
 		<ol>
-			<li><a href="produto.html">
+			<li><a href="produto.php">
 					<figure>
 						<img alt="mulher blusa fuzz cardigan"
 							src="img/produtos/miniatura1.png">
 						<figcaption>Fuzz Cardigan por R$ 129,99</figcaption>
 					</figure>
 			</a></li>
-			<li><a href="produto.html">
+			<li><a href="produto.php">
 					<figure>
 						<img alt="Produto 2" src="img/produtos/miniatura2.png">
 						<figcaption>Produto 2 por R$ 2,99</figcaption>
 					</figure>
 			</a></li>
-			<li><a href="produto.html">
+			<li><a href="produto.php">
 					<figure>
 						<img alt="Produto 3" src="img/produtos/miniatura3.png">
 						<figcaption>Produto 3 por R$ 3,99</figcaption>
 					</figure>
 			</a></li>
-			<li><a href="produto.html">
+			<li><a href="produto.php">
 					<figure>
 						<img alt="Produto 4" src="img/produtos/miniatura4.png">
 						<figcaption>Produto 4 por R$ 4,99</figcaption>
 					</figure>
 			</a></li>
-			<li><a href="produto.html">
+			<li><a href="produto.php">
 					<figure>
 						<img alt="Produto 5" src="img/produtos/miniatura5.png">
 						<figcaption>Produto 5 por R$ 5,99</figcaption>
 					</figure>
 			</a></li>
-			<li><a href="produto.html">
+			<li><a href="produto.php">
 					<figure>
 						<img alt="Produto 6" src="img/produtos/miniatura6.png">
 						<figcaption>Produto 6 por R$ 6,99</figcaption>
 					</figure>
 			</a></li>
-
 		</ol>
+		<button type="button">Mostra mais</button>
 	</section>
 </div>
 <script type="text/javascript" src="js/banner.js"></script>
-
+<script type="text/javascript" src="js/home.js"></script>
 <?php include("rodape.php"); ?>
 
